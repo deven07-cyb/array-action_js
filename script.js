@@ -1,60 +1,31 @@
-//push operation
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.push("Kiwi", "Lemon", "Pineapple");
-document.getElementById("push").innerHTML = fruits;
+//object
+const person={
+    firstname:"deven",
+    lastname:"sureja",
+    age:21,
+    color:"black"
+};
+document.getElementById("object").innerHTML =person.firstname + " is " + person.age + " years old.";
 
-//concat operation
-const arr1=["deven","sureja"];
-const arr2=["shaileshbhai"];
-const arr3=arr1.concat(arr2);
-document.getElementById("concat").innerHTML =arr3;
+//keys ex:-1
+const fruits = ["Banana", "Orange", "Apple"];
+const keys = Object.keys(fruits);
+document.getElementById("key").innerHTML = keys;
 
-//entries
-const fruit = ["Banana", "Orange", "Apple", "Mango"];
-const f = fruit.entries();
-for (let x of f) 
-{
-  document.getElementById("entries").innerHTML += x + "<br>";
-}
+//keys ex:-2
+const persons = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue"
+  };
+  const key = Object.keys(person);
+  
+  document.getElementById("keys").innerHTML = key;
 
-//every elements check
-const ages = [32, 33, 16, 40];
-document.getElementById("every").innerHTML = ages.every(checkAge);
+//value 
 
-function checkAge(age) {
-  return age > 18;
-}
+const fruit = ["Banana", "Orange", "Apple", "Mango",];
+const myArray = fruit.valueOf();
 
-//fill every item
-const fr = ["Banana", "Orange", "Apple", "Mango"];
-document.getElementById("fill").innerHTML = fr.fill("Kiwi");
-
-//filter in item
-const age = [32, 33, 16, 40];
-
-document.getElementById("filter").innerHTML = age.filter(checkAdult);
-
-function checkAdult(age) {
-  return age >= 18;
-}
-
-//slice in array
-const fru = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-const citrus = fru.slice(1, 3);
-
-document.getElementById("slice").innerHTML = citrus;
-
-//pop in array
-
-const name=["deven","jay","ankit","anand"];
-name.pop();
-document.getElementById("pop").innerHTML = name;
-
-//find in array
-const ag = [3, 10, 18, 20];
-
-document.getElementById("find").innerHTML = ag.find(checkAge);
-
-function checkAge(age) {
-  return age > 18;
-}
+document.getElementById("value").innerHTML = myArray;
