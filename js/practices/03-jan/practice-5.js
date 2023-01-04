@@ -10,7 +10,5 @@ var intToRoman = function (num) {
 };
 
 console.log(intToRoman(3));
-console.log(intToRoman(4));
-console.log(intToRoman(9));
 console.log(intToRoman(58));
 console.log(intToRoman(1994));
