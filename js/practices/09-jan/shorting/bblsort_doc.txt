@@ -1,0 +1,40 @@
+arr = [7,8,3,1,2];   
+
+**basically work on ascending order of element**
+**loop wise execution,**push largest element into last
+
+7,8,3,1,2
+7,3,8,1,2
+7,3,1,8,2
+7,3,1,2,8
+                    
+3,7,1,2,8
+3,1,7,2,8
+3,1,2,7,8
+
+1,3,2,7,8
+1,2,3,7,8
+
+
+*************************************************************
+function bblsort(arr)
+{
+    for (var i = 0 ; i < arr.length ; i++)                 //i=0;0<3 // i=1;i<2 // i=2;i<1 // i=3;i<0
+    {
+        for(var j = 0 ; j < ( arr.length - i - 1 ) ; j++)  //j=0;j<3 // j=1;j<2 // j=2;j<1 // j=3;j<0
+        {
+            if(arr[j] > arr[j+1])                          //(7>8) // (8>3) // (8>1) // (8>2)
+            {
+                var temp = arr[j];                         //temp=8 //temp=8 // temp=8
+                arr[j] = arr[j + 1];                       //8=3 // 8=1 // 8=2
+                arr[j+1] = temp;                           //temp=3 // temp=1 // temp=2
+            }                                              // sorted array is = [7,3,1,2,8] {first loop are completed}
+        }
+    }
+    console.log(arr);
+}
+
+var arr = [7,8,3,1,2];
+bblsort(arr);
+
+                      
