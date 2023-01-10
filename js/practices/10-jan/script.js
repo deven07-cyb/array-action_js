@@ -38,11 +38,10 @@ function parseHTML(html)
 const html = 
 `<html>
 <head>
-    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <p>deven</p>
 </body>
 </html>`;
 
