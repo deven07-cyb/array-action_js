@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h2>Add Product Form</h2>
+        </legend>
+        
+        <td>
+            
+            <form onsubmit="event.preventDefault();onFormSubmit();"  autocomplete="off"  >
+        
+        <div class="formdesign" id="producttitle" > 
+            <label class="validation-error hide" id ="producttitlevalidationerror"></label>
+            Product Title: <br> <input type="text" name="fpro" id="fpro" required><b><span class="formerror">
+                 </span></b><br><br>
+        </div>
+
+        <div class="formdesign" id="price">
+            Price: <br><input type="price" name="fprice" id="fprice" required><b><span class="formerror"> </span></b><br><br>
+        </div>
+
+        <div class="formdesign" id="des">
+            Description: <br><input type="des" name="fdes" id="fdes" required placeholder="Type Here"><b><span class="formerror"></span></b><br><br>
+            </div>
+
+        <div class="formdesign" id="cat">
+            <label for="catagory">Catagory</label><span class="formerror"></span><br>
+            <select name="Fcat" id="fcat" required>
+                <option value="Choose">Choose</option>
+                <option value="Women's">Women's clothing</option>
+                <option value="Men's">Men's clothing</option>
+                <option value="Children's">Children's clothing</option>
+            </select>
+            </div>
+<br>
+        <div class="form-action-button">
+        <button class="button">submit</button>
+        </div>
+        
+ 
+</form>
+</td>
+    </fieldset>
+
+    <br>
+    
+
+    <fieldset>
+        <legend>
+            <h2>local storage</h2>
+        </legend>
+        <td>
+        <table border="1" id="tab" class="list">
+            <tr>
+                <th class=".col">Product Title</th>
+                <th class=".col">Price</th>
+                <th class=".col">Description</th>
+                <th class=".col">Catagory</th>
+                <th class=".col">Action</th>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+<script src="script.js"></script>
+</html>
