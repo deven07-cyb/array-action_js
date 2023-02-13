@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/practice-5/script.js"></script>
+    <link rel="stylesheet" href="/practice-5/style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="expression" class="inp" disabled />
+    <table>
+      <br><br>
+      <tr>
+        <td><input type="button" class="s1" value="1" onclick="Evalue('1')" /></td>
+        <td><input type="button" class="s2" value="2" onclick="Evalue('2')" /></td>
+        <td><input type="button" class="s3" value="3" onclick="Evalue('3')" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" class="s4" value="4" onclick="Evalue('4')" /></td>
+        <td><input type="button" class="s5" value="5" onclick="Evalue('5')" /></td>
+        <td><input type="button" class="s6" value="6" onclick="Evalue('6')" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" class="s7" value="7" onclick="Evalue('7')" /></td>
+        <td><input type="button" class="s8" value="8" onclick="Evalue('8')" /></td>
+        <td><input type="button" class="s9" value="9" onclick="Evalue('9')" /></td>
+      </tr>
+    </table>
+    
+    <table>
+      <tr>
+        <td><input type="button" class="s0" value="0" onclick="Evalue('0')" /></td> 
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td><input type="button" class="sp" value="+" onclick="Evalue('+')" /></td>
+        <td><input type="button" class="sm" value="-" onclick="Evalue('-')" /></td>
+        <td><input type="button" class="sg" value="*" onclick="Evalue('*')" /></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td><input type="button" class="sd" value="/" onclick="Evalue('/')" /></td>
+        <td><input type="button" class="sc" value="C" onclick="clear()" /></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td><input type="button" class="eql" value="=" onclick="calculate()" /></td>
+      </tr>
+    </table>
+  </div>
+  
+</body>
+</html>
