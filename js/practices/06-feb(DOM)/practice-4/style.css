@@ -1,0 +1,35 @@
+body {
+    padding: 10px 50px;
+}
+
+.formdesign {
+    font-size: 20px;
+
+}
+.container .formdesign .name{
+    margin-left: 150px;
+}
+.container .formdesign .email{
+    margin-left: 150px;
+}
+.container .formdesign .phone{
+    margin-left: 148px;
+}
+.container .formdesign .pass{
+    margin-left: 121px;
+}
+.container .formdesign .cpass{
+    margin-left: 48px;
+}
+
+.formerror {
+    color: red;
+}
+
+.but {
+    border-radius: 9px;
+    width: 110px;
+    height: 40px;
+    font-size: 25px;
+    margin: 36px 334px 36px 125px;
+}

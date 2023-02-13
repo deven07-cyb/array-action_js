@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/practice-4/style.css">
+    
+</head>
+<body>
+    <h1>Registration form using validation</h1>
+    <div class="container">
+    <form aciton ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+        
+        <div class="formdesign" id="name">
+            Name: <input type="text" name="fname" class="name" required><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="email">
+            Email: <input type="email" name="femail" class="email" required><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="phone">
+            Phone: <input type="phone" name="fphone" class="phone" required><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="pass">
+            Password: <input type="password" name="fpass" class="pass" required><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="cpass">
+            Confirm Password: <input type="password" name="fcpass" class="cpass" required><b><span class="formerror"></span></b>
+        </div>
+
+        <input class="but" type="submit" value="Submit">
+
+    </form>
+</div>
+</body>
+<script src="/practice-4/practice4.js"></script>
+</html>

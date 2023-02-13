@@ -1,0 +1,23 @@
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+  img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+  }
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .btn{
+    margin-left: 475px;
+  }
