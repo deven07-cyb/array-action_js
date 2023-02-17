@@ -1,21 +1,21 @@
 CREATE TABLE product
 (
-		product_id INT NOT NULL AUTO_INCREMENT,
+	product_id INT NOT NULL AUTO_INCREMENT,
         product_name VARCHAR(255) NOT NULL,
         product_price INT NOT NULL,
-		PRIMARY KEY (product_id)
+	PRIMARY KEY (product_id)
 );
 
 CREATE TABLE categories
 (
-		categories_id INT NOT NULL AUTO_INCREMENT,
+	categories_id INT NOT NULL AUTO_INCREMENT,
         categories_name VARCHAR(255) NOT NULL,
-         PRIMARY KEY (categories_id)
+        PRIMARY KEY (categories_id)
 );
 
 CREATE TABLE product_categories
 (
-		product_id INT NOT NULL ,
+	product_id INT NOT NULL ,
         categories_id INT NOT NULL ,
         FOREIGN KEY(product_id) REFERENCES product(product_id),
         FOREIGN KEY(categories_id) REFERENCES categories(categories_id)
